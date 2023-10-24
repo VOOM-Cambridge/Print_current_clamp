@@ -14,8 +14,8 @@ services:
         #    options:
         #        tag: docker-current-dc-1
         restart: unless-stopped
-        depends_on:
-            - "mqtt_broker"
+        # depends_on:
+        #     - "mqtt_broker"
     current-collection_2:
         extends:
             file: current_dc_2/app.yml
@@ -29,8 +29,8 @@ services:
         #    options:
         #        tag: docker-current-dc-2
         restart: unless-stopped
-        depends_on:
-            - "mqtt_broker"
+        # depends_on:
+        #     - "mqtt_broker"
     current-collection_3:
         extends:
             file: current_dc_3/app.yml
@@ -44,8 +44,8 @@ services:
         #    options:
         #        tag: docker-current-dc-3
         restart: unless-stopped
-        depends_on:
-            - "mqtt_broker"
+        # depends_on:
+        #     - "mqtt_broker"
     current-collection_4:
         extends:
             file: current_dc_4/app.yml
@@ -59,8 +59,8 @@ services:
         #    options:
         #        tag: docker-current-dc-4
         restart: unless-stopped
-        depends_on:
-            - "mqtt_broker"
+        # depends_on:
+        #     - "mqtt_broker"
     current-collection_5:
         extends:
             file: current_dc_5/app.yml
@@ -74,8 +74,8 @@ services:
         #    options:
         #        tag: docker-current-dc-5
         restart: unless-stopped
-        depends_on:
-            - "mqtt_broker"  
+        # depends_on:
+        #     - "mqtt_broker"  
 
 networks:
     internal:
